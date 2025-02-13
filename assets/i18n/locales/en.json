@@ -1,3 +1,8 @@
 {
-  "welcome_message": "Welcome to our application!"
+  "app":"La Bella Italia",
+  "ingresar":"Ingresar",
+  "correoElectronico":"Correo electronico",
+  "password":"Contraseña",
+  "accountCreate":"¿ No tienes cuenta ?",
+  "register":"Registrate"
 }
