@@ -3,9 +3,10 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@Theme/*": ["src/theme/*"],
-      "@Views/*": ["src/views/*"]
+      "@components/*": ["src/Presentation/components/*"],
+      "@Theme/*": ["src/Presentation/theme/*"],
+      "@Views/*": ["src/Presentation/views/*"],
+      "@assest/*": ["assets/*"]
     }
   }
 }

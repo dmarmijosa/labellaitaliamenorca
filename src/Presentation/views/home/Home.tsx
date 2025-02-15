@@ -3,34 +3,34 @@ import {useTranslation} from 'react-i18next';
 import {useFonts} from 'expo-font';
 import {Image, StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
-import {RoundedButton} from '../../components/RoundedButton';
+import {RoundedButton} from '@components/RoundedButton';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack'
 import {RootStackParamsList} from '../../../../App';
 import useViewModel from './ViewModel';
-import CustomTextInput from '../../components/CustomTextInput';
+import CustomTextInput from '@components/CustomTextInput';
 import styles from './styles';
 
 const HomeScreen = () => {
     const {t} = useTranslation();
     const [fontLoaded] = useFonts({
-        'GreatVibes-Regular': require('../../../../assets/fonts/GreatVibes-Regular.ttf'),
+        'GreatVibes-Regular': require('@assest/fonts/GreatVibes-Regular.ttf'),
     });
     const {email, password, onChange} = useViewModel();
     const navigation = useNavigation<StackNavigationProp<RootStackParamsList>>();
     return (
         <View style={styles.container}>
             <Image style={styles.imageContainer}
-                   source={require('../../../../assets/chef.jpg')}
+                   source={require('@assest/chef.jpg')}
             />
             <View style={styles.logoContainer}>
                 <Image style={styles.logoImage}
-                       source={require('../../../../assets/logo.png')}/>
+                       source={require('@assest/logo.png')}/>
                 <Text style={styles.logoText}>{t('app')}</Text>
             </View>
             <View style={styles.form}>
                 <Text style={styles.formText}>{t('login.ingresar')}</Text>
-                <CustomTextInput image={require('../../../../assets/email.png')}
+                <CustomTextInput image={require('@assest/email.png')}
                                  placeholder={t('login.email')}
                                  value={email}
                                  keyboardType={'email-address'}
@@ -38,7 +38,7 @@ const HomeScreen = () => {
                                  onChangeText={onChange}
                 />
                 <CustomTextInput
-                    image={require('../../../../assets/password.png')}
+                    image={require('@assest/password.png')}
                     placeholder={t('login.password')}
                     value={password}
                     keyboardType={'default'}
