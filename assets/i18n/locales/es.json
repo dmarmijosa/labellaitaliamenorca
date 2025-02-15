@@ -1,9 +1,22 @@
 {
   "app":"La Bella Italia",
-  "ingresar":"Ingresar",
-  "email":"Correo electronico",
-  "password":"Contraseña",
-  "entry": "Entrar",
-  "accountCreate":"¿ No tienes cuenta ?",
-  "register":"Registrate"
+  "login": {
+    "ingresar":"Ingresar",
+    "email":"Correo electrónico",
+    "password":"Contraseña",
+    "entry": "Entrar",
+    "accountCreate":"¿ No tienes cuenta ?",
+    "register":"Registrate"
+  },
+  "registerScreen": {
+    "seleccionaImagen": "Selecciona una imagen",
+    "registrarse": "Registrarse",
+    "nombres": "Nombres",
+    "apellidos": "Apellidos",
+    "email": "Correo electrónico",
+    "telefono": "Teléfono",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "confirmar": "Confirmar"
+  }
 }
